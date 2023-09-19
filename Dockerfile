@@ -12,3 +12,4 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Update Ubuntu Software repository
 RUN apt update
 RUN apt-get install man-db -y
+RUN yes | unminimize
