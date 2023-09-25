@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    if (access("linux. txt", F_OK) == -1)
+    if (access("linux.txt", F_OK) == -1)
     {
         perror("linux.txt");
         exit(1);
