@@ -1,5 +1,4 @@
 set encoding=utf-8
-set fileencodings=utf-8,cp949
 
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim and sourced by
 " the call to :runtime you can find below.  If you wish to change any of those
