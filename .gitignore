@@ -1,1 +1,6 @@
 .vscode
+
+# Container
+.vscode-server
+.gitconfig
+.ssh
