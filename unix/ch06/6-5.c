@@ -19,7 +19,7 @@ int main() {
         exit(1);
     }
 
-    for (i = 0; i < 99999999; i++)
+    for (i = 0; i < 999999999; i++)
         time(&t);
     sleep(1);
 
@@ -32,7 +32,7 @@ int main() {
     printf("t2: %ld\n", t2);
     printf("utime : %ld\n", buf.tms_utime);
     printf("stime : %ld\n", buf.tms_stime);
-    printf("Real time : %.1f sec\n", (double)(t2 - t1) / ct);
-    printf("User time : %.1f sec\n", (double)buf.tms_utime / ct);
-    printf("System time : %.1f sec\n", (double)buf.tms_stime / ct);
+    printf("Real time : %.4f sec\n", (double)(t2 - t1) / ct);
+    printf("User time : %.4f sec\n", (double)buf.tms_utime / ct);
+    printf("System time : %.4f sec\n", (double)buf.tms_stime / ct);
 }
