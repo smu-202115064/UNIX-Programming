@@ -22,7 +22,7 @@ int main() {
                 continue;
             printf("--> Parent process\n");
             printf("Status: %d, %x\n", status, status);
-            printf("Child process Exit Status:%d\n", status >> 8);
+            printf("Child process Exit Status:%d\n", status >> 8); // 1 Byte right-shift
             break;
     }
 }
