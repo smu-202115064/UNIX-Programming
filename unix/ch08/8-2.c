@@ -23,4 +23,7 @@ int main() {
     printf("Wait 2nd Ctrl+C... : SIGINT\n");
     pause();
     printf("After 2nd Signal Handler\n");
+    printf("Wait 3rd Ctrl+C... : SIGINT\n");
+    pause();
+    printf("After 3rd Signal Handler\n");
 }
