@@ -6,6 +6,7 @@
 void sig_handler(int signo) {
     printf("Signal Handler signum: %d\n", signo);
     psignal(signo, "Received Signal");
+    signal(signo, SIG_DFL);
 }
 
 int main() {
