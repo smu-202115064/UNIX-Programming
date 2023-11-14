@@ -12,10 +12,10 @@ int main() {
     struct itimerval it;
 
     signal(SIGALRM, sig_handler);
-    it.it_value.tv_sec = 3;
-    it.it_value.tv_usec = 0;
-    it.it_interval.tv_sec = 2;
-    it.it_interval.tv_usec = 300;
+    it.it_value.tv_sec = 5;
+    it.it_value.tv_usec = 5;
+    it.it_interval.tv_sec = 3;
+    it.it_interval.tv_usec = 200000;
 
     if (setitimer(ITIMER_REAL, &it, (struct itimerval *)NULL) == -1) {
         perror("setitimer");
