@@ -15,7 +15,7 @@ int main() {
     it.it_value.tv_sec = 3;
     it.it_value.tv_usec = 0;
     it.it_interval.tv_sec = 2;
-    it.it_interval.tv_usec = 0;
+    it.it_interval.tv_usec = 300;
 
     if (setitimer(ITIMER_REAL, &it, (struct itimerval *)NULL) == -1) {
         perror("setitimer");
@@ -27,7 +27,7 @@ int main() {
             perror("getitimer");
             exit(1);
         }
-        printf("%d sec, %d msec.\n", (int)it.it_value.tv_sec, (int)it.it_value.tv_usec);
+        printf("(timer) %d sec, %d msec. (interval) %d sec, %d msec. \n", (int)it.it_value.tv_sec, (int)it.it_value.tv_usec, (int)it.it_interval.tv_sec, (int)it.it_interval.tv_usec);
         sleep(1);
     }
 }
