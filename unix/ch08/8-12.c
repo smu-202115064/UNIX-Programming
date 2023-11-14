@@ -8,7 +8,7 @@ int main() {
     sigemptyset(&new);
     sigaddset(&new, SIGINT);
     sigaddset(&new, SIGQUIT);
-    sigprocmask(SIG_BLOCK, &new, (sigset_t *)NULL);
+    // sigprocmask(SIG_BLOCK, &new, (sigset_t *)NULL);
 
     printf("Blocking Signals : SIGINT, SIGQUIT\n");
     printf("Send SIGQUIT\n");
