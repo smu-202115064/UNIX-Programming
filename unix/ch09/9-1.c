@@ -32,5 +32,6 @@ int main(int argc, char *argv[]) {
     }
     close(fd);
 
-    printf("%s", addr);
+    for (int i = 0; i < 10; i++)
+        printf("%s", addr);
 }
