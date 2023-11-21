@@ -8,5 +8,5 @@
 .bash_history
 .viminfo
 
-[0-9]-[0-9]
-[0-9]-[0-9][0-9]
+unix/*/*
+!unix/*/*.*
