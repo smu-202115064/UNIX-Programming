@@ -32,6 +32,8 @@ int main() {
         exit(1);
     }
 
+    clen = sizeof(cli);
+
     printf("Waiting ...\n");
     if ((nsd = accept(sd, (struct sockaddr *)&cli, &clen)) == -1) {
         perror("accept");
